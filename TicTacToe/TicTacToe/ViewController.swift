@@ -1,20 +1,23 @@
-//
-//  ViewController.swift
-//  TicTacToe
-//
-//  Created by Alex Paul on 11/8/18.
-//  Copyright © 2018 Pursuit. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
-
-
+    
+    var gameBrain = TicTacToeBrain()
+    var gameState: GameState! {
+        didSet {
+            print(self.gameState)
+            switch gameState! {
+            case .inProgress: break
+            case .tie: print("Tie!")
+            case let .victory(player): print(player, "wins!")
+            }
+        }
+    }
+    
+    @IBAction func enterGameMove(_ sender: GameButton) {
+        sender.isEnabled = false
+        sender.setTitle(gameBrain.currentPlayer.symbol.rawValue, for: .normal)
+        gameState = gameBrain.makeMove(location: BoardLocation(row: sender.row, column: sender.col))
+    }
 }
 
