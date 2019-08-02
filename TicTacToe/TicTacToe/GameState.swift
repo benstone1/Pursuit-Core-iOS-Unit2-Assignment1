@@ -1,5 +1,5 @@
 enum GameState {
     case victory(Player)
     case tie
-    case inProgress
+    case inProgress(Player)
 }

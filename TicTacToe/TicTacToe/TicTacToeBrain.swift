@@ -4,13 +4,15 @@ struct TicTacToeBrain {
     
     mutating func makeMove(location: BoardLocation) -> GameState {
         guard location.row <= 2 && location.column <= 3 else { fatalError("Invalid location") }
-        let gameState = gameBoard.makeMove(at: location, with: currentPlayer.symbol)
-        currentPlayer.toggle()
+        let gameState = gameBoard.makeMove(at: location)
         return gameState
+    }
+    
+    var currentPlayer: Player {
+        return gameBoard.currentPlayer
     }
     
     // MARK: - Private Properties
     
-    private(set) var currentPlayer = Player.playerOne
     private var gameBoard = GameBoard()
 }

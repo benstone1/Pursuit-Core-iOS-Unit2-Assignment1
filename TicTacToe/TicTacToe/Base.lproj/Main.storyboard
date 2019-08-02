@@ -184,14 +184,45 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player one's turn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-Ta-8Yi">
+                                <rect key="frame" x="141" y="221.5" width="132.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ph-pp-Mus">
+                                <rect key="frame" x="172" y="624" width="70" height="30"/>
+                                <state key="normal" title="Play again"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUv-xB-yXz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ix6-2i-Eyq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2yD-TP-rYu"/>
+                            <constraint firstItem="gp9-Ta-8Yi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JVP-hC-ZM0"/>
                             <constraint firstItem="Ix6-2i-Eyq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UGp-d9-Bod"/>
+                            <constraint firstItem="Ix6-2i-Eyq" firstAttribute="top" secondItem="gp9-Ta-8Yi" secondAttribute="bottom" constant="100" id="erK-AA-WaK"/>
+                            <constraint firstItem="5ph-pp-Mus" firstAttribute="top" secondItem="Ix6-2i-Eyq" secondAttribute="bottom" constant="60" id="rs2-cd-zJH"/>
+                            <constraint firstItem="5ph-pp-Mus" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vzI-dG-5Ku"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gameInfoLabel" destination="gp9-Ta-8Yi" id="9p6-6D-NlL"/>
+                        <outlet property="playAgainButton" destination="5ph-pp-Mus" id="Bsg-4Q-a1b"/>
+                        <outletCollection property="allGameButtons" destination="8qm-tF-ZOK" collectionClass="NSMutableArray" id="gmY-Pz-DRy"/>
+                        <outletCollection property="allGameButtons" destination="8qm-tF-ZOK" collectionClass="NSMutableArray" id="gYS-2i-Qa3"/>
+                        <outletCollection property="allGameButtons" destination="FF7-7T-hzF" collectionClass="NSMutableArray" id="0xe-Y5-x2l"/>
+                        <outletCollection property="allGameButtons" destination="5YM-Tx-RGI" collectionClass="NSMutableArray" id="PeE-p9-o5F"/>
+                        <outletCollection property="allGameButtons" destination="qj2-YU-4kG" collectionClass="NSMutableArray" id="r8v-1m-9gU"/>
+                        <outletCollection property="allGameButtons" destination="h7a-kB-1GK" collectionClass="NSMutableArray" id="gVW-Wi-spo"/>
+                        <outletCollection property="allGameButtons" destination="Mgg-pm-XT7" collectionClass="NSMutableArray" id="crL-Iu-OF5"/>
+                        <outletCollection property="allGameButtons" destination="p8f-fC-hBU" collectionClass="NSMutableArray" id="Fon-VR-RP1"/>
+                        <outletCollection property="allGameButtons" destination="Hba-fL-yMH" collectionClass="NSMutableArray" id="8fw-KB-Cb6"/>
+                        <outletCollection property="allGameButtons" destination="2c2-PJ-I3X" collectionClass="NSMutableArray" id="egl-8l-kQ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
