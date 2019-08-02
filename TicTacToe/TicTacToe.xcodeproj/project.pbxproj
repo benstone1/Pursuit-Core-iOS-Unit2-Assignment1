@@ -24,18 +24,18 @@
 /* Begin PBXFileReference section */
 		57A2EF432194DBAF009B12CA /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A2EF462194DBAF009B12CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		57A2EF482194DBAF009B12CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		57A2EF482194DBAF009B12CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57A2EF4B2194DBAF009B12CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57A2EF4D2194DBB0009B12CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		57A2EF502194DBB0009B12CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57A2EF522194DBB0009B12CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		57A2EF582194DBFD009B12CA /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameButton.swift; path = ../GameButton.swift; sourceTree = "<group>"; };
-		57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TicTacToeBrain.swift; path = ../TicTacToeBrain.swift; sourceTree = "<group>"; };
-		CD605AFA22F39DCF00478D93 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameBoard.swift; path = ../GameBoard.swift; sourceTree = "<group>"; };
-		CD605AFC22F39DF100478D93 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../Player.swift; sourceTree = "<group>"; };
-		CD605AFE22F39E0E00478D93 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameState.swift; path = ../GameState.swift; sourceTree = "<group>"; };
-		CD605B0022F39E1E00478D93 /* BoardLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardLocation.swift; path = ../BoardLocation.swift; sourceTree = "<group>"; };
-		CD605B0222F39E3300478D93 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Symbol.swift; path = ../Symbol.swift; sourceTree = "<group>"; };
+		57A2EF582194DBFD009B12CA /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeBrain.swift; sourceTree = "<group>"; };
+		CD605AFA22F39DCF00478D93 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		CD605AFC22F39DF100478D93 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CD605AFE22F39E0E00478D93 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		CD605B0022F39E1E00478D93 /* BoardLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardLocation.swift; sourceTree = "<group>"; };
+		CD605B0222F39E3300478D93 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
